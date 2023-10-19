@@ -35,7 +35,8 @@
                             <option value="">Select Account Type</option>
                             <option value="user" {{ old('ap_accountType') == 'user' ? 'selected' : '' }}>user</option>
                             <option value="admin" {{ old('ap_accountType') == 'admin' ? 'selected' : '' }}>admin</option>
-                        </select> @error('ap_accountType')
+                        </select>
+                        @error('ap_accountType')
                             <span> {{ $message }}</span>
                         @enderror
                     </div>
